@@ -1,6 +1,5 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
-![Header Name](https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png | width=100)
-<img src="https://github.com/favicon.ico" width="48">
+<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="250">
 ![LinkedIn Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png)
 ![Discord Icont](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord%20Icon%402x.png)
 ![Instagram Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram%20Icon%402x.png)
