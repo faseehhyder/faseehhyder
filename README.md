@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <head>
+      <style>
+.containerdiv { float: left; position: relative; } 
+.cornerimage { position: absolute; top: 0; right: 0; } 
+</style>
+  </head>
 <body>
 
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
@@ -25,6 +31,13 @@
           <a href="https://heroku.com/deploy">
       <img  align="center"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
     </a>
+  
+ 
+
+<div class="containerdiv">
+    <img border="0" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt=""">
+    <img class="cornerimage" border="0" src="http://www.gravatar.com/avatar/" alt="">
+<div>
   
 </body>
 </html>
