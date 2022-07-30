@@ -4,7 +4,7 @@
 
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <br>
-<img align="center" src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
+<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
 <br clear="center"/>
 ![LinkedIn Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png)
 ![Discord Icont](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord%20Icon%402x.png)
