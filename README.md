@@ -8,7 +8,7 @@
   
   </center>
   
-  <div style="text-align:center">This text will be centered.
+  <div style="font-weight:bold">This text will be centered.
 <p>So will this paragraph.</p></div>
 
 
