@@ -7,8 +7,9 @@
 ![Instagram Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram%20Icon%402x.png)
 ![FaceBook Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/FaceBook%20Icon%402x.png)
 ![Twitter Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter%402x.png)
+<br>
 <a href="https://heroku.com/deploy">
-  <img  align="right"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <img  align="center"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
   
 
