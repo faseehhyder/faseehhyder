@@ -1,5 +1,5 @@
 <center>
-
+![LinkedIn Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Frame%201.png)
 ![LinkedIn Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png)
 ![Discord Icont](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord%20Icon%402x.png)
 ![Instagram Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram%20Icon%402x.png)
