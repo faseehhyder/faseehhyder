@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body align="center">
 
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <br>
