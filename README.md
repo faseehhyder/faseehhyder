@@ -21,8 +21,8 @@
   </div>
   
 <div class = "container" style="display:flex;">
-	<img width = "300" height = "200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
-	<img width = "300" height = "200px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
+	<img width = "400" height = "200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
+	<img width = "400" height = "200px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
 </div>
   
 
