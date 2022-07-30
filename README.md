@@ -1,5 +1,4 @@
-<style>
-	</style>
+document.body.style.backgroundColor = "red";
 
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <div align = "center">
