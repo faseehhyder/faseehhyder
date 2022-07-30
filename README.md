@@ -7,5 +7,8 @@
 ![Twitter Icon](https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter%402x.png)
   
   </center>
+  
+  <div style="text-align:center">This text will be centered.
+<p>So will this paragraph.</p></div>
 
 
