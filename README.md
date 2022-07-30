@@ -1,3 +1,6 @@
+<style>
+	</style>
+
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <div align = "center">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
