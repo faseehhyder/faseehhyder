@@ -1,4 +1,11 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
+
+  <div align="center">
+	<br>
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/svgs/header.svg" width="400" height="120">
+	<br>
+  </div>
+  <br>
   <div align="center">
     <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
     <br>
@@ -16,10 +23,4 @@
     <br>
   </div>
   
-  
-  <div align="center">
-	<br>
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/svgs/header.svg" width="400" height="120">
-	<br>
-</div>
 
