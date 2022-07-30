@@ -23,6 +23,6 @@
   
   ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&hide=TeX&layout=compact)
   
-<img  src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=radical"/>
+<img  src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
   
 
