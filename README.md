@@ -21,10 +21,10 @@
   </div>
   
   <div style="height:1000px;" align="center">
-        <a href="https://heroku.com/deploy">
+  </div>
+          <a href="https://heroku.com/deploy">
       <img  align="center"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
     </a>
-  </div>
   
 </body>
 </html>
