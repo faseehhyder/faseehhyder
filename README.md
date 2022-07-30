@@ -18,10 +18,14 @@
     </a>
     <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter%402x.png">
     <br>
-    <a href="https://heroku.com/deploy">
+  </div>
+  
+  <div height = "10px">
+        <a href="https://heroku.com/deploy">
       <img  align="center"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
     </a>
   </div>
+  
 </body>
 </html>
   
