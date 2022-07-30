@@ -20,7 +20,7 @@
     <br>
   </div>
   
-  <div style="height:100px;" align="center">
+  <div style="height:1000px;" align="center">
         <a href="https://heroku.com/deploy">
       <img  align="center"  src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
     </a>
