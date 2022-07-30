@@ -1,6 +1,6 @@
 <svg fill="none" viewBox="0 0 250 120" width="250" height="120" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
+		<div xmlns="http://www.w3.org/1999/xhtml" align = "center">
 			<style>
 				@keyframes rotate {
 					0% {
