@@ -4,7 +4,7 @@
 </div>
   <br>
   <div align="center">
-  <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Social.png" width = "200">
+  <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Social.png" width = "150">
   <br>
     <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png">
