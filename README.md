@@ -1,10 +1,13 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
-
-  <div align="center">
+<div align = "center">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
+</div>
+<div align="center">
 	<br>
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/svgs/header.svg" width="400" height="120">
 	<br>
-  </div>
+</div>
+
   <br>
   <div align="center">
     <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
