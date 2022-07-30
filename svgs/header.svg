@@ -1,6 +1,6 @@
 <svg fill="none" viewBox="0 0 250 120" width="250" height="120" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml" align = "center">
+		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
 				@keyframes rotate {
 					0% {
@@ -49,7 +49,7 @@
 					justify-content: center;
 					margin: 0;
 					width: 100%;
-					height: 100px;
+					height: 120px;
 					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
 					background-size: 600% 400%;
 					animation: gradientBackground 10s ease infinite;
@@ -69,11 +69,6 @@
 						0 4px 0 #efefef,
 						0 12px 5px rgba(0, 0, 0, 0.1);
 					animation: rotate ease-in-out 1s infinite alternate;
-				}
-				p {
-					font-size: 20px;
-					text-shadow: 0 1px 0 #efefef;
-					animation: 5s ease 0s normal forwards 1 fadeIn;
 				}
 			</style>
 			<div class="container">
