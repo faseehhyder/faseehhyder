@@ -8,7 +8,5 @@
   
   </center>
   
-  <div style="font-weight:bold">This text will be centered.
-<p>So will this paragraph.</p></div>
-
+<p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>
 
