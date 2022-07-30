@@ -21,7 +21,7 @@
   </div>
   
 <div class = "container" align = "center">
-	![Visitor Count](https://profile-counter.glitch.me/{YOUR USER}/count.svg)
+	![Visitor Count](https://profile-counter.glitch.me/faseehhyder/count.svg)
 	<br>
 	<img height = "150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
 	<img height = "150px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
