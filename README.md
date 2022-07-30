@@ -1,5 +1,3 @@
-document.body.style.backgroundColor = "red";
-
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <div align = "center">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
@@ -22,7 +20,7 @@ document.body.style.backgroundColor = "red";
     <br>
   </div>
   
-<div class = "container">
+<div class = "container" style="background-color:blue;text-align:center">
 	<img height = "200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
 	<img height = "200px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
 </div>
