@@ -21,7 +21,7 @@
   </div>
   
 <div class = "container">
-	<img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
+	<img height = "200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
 	<img  src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
 </div>
   
