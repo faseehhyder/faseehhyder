@@ -20,6 +20,7 @@
 	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=material-palenight&hide_border=true,&layout=compact)](https://github.com/faseehhyder/github-readme-stats"/>
 	</div>
 <p align="center">
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/CONTIBUTION%20STATS.png"/>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&theme=material-palenight&hide_border=true&fire=C77800&ring=7C2AE8&background=1F222E" />
 </p>
