@@ -3,28 +3,31 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png"/>
 </div>
 
-<div class = "heading_detail" align = "center">
+<div class = "about_me" align = "center">
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
 	<br>
 </div>
+
 <div align ="center">
 	<hr width="70%">
-<img src="https://komarev.com/ghpvc/?username=faseehhyder&color=192342"/>
+	<img src="https://komarev.com/ghpvc/?username=faseehhyder&color=192342"/>
 </div>
+
 <div align = "center">
-<br>
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
+	<br>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
 </div>
-  <div align="center">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
-      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
-  </div>
+
+<div align="center">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
+</div>
   
 <div class = "tools_languages" align = "center">
 	<br>
@@ -41,61 +44,66 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Photoshop.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
-	<div class = "music" align = "center">	
+
+<div class = "music" align = "center">	
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
 	<br>
-<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
+	<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
+
 <div class="projects" align="center">	
 	<hr width="70%">
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>								<br>
 	<br>
+	
 <table>
-  <thead align="center">
-    <tr border: none;>
-      <td><b>🖥️ Projects</b></td>
-      <td><b>⭐ Stars</b></td>
-      <td><b>📚 Forks</b></td>
-      <td><b>🛎 Issues</b></td>
-      <td><b>📬 Pull requests</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/faseehhyder/personality_tester"><b>Personality Assessment App</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-    </tr>
-	  <tr>
-      <td><a href="https://github.com/faseehhyder/2d-platfomer-game"><b>2D Platformer Game</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/faseehhyder/scientific-calculator"><b>Scientific Calculator</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-    </tr>
-  </tbody>
-</table>
+	  <thead align="center">
+		<tr border: none;>
+		  <td><b>🖥️ Projects</b></td>
+		  <td><b>⭐ Stars</b></td>
+		  <td><b>📚 Forks</b></td>
+		  <td><b>🛎 Issues</b></td>
+		  <td><b>📬 Pull requests</b></td>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <td><a href="https://github.com/faseehhyder/personality_tester"><b>Personality Assessment App</b></a></td>
+		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
+		</tr>
+		  <tr>
+		  <td><a href="https://github.com/faseehhyder/2d-platfomer-game"><b>2D Platformer Game</b></a></td>
+		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
+		</tr>
+		<tr>
+		  <td><a href="https://github.com/faseehhyder/scientific-calculator"><b>Scientific Calculator</b></a></td>
+		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
+		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
+		</tr>
+	  </tbody>
+	</table>
 </div>
-<p align="center">
+
+<div align="center">
 	<br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_stats.png" width = "35%"/>
 	<br>
 	<br>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&ring=0c1329&show_icons=true&hide_border=true&&bg_color=efe141&title_color=0c1329&icon_color=0c1329&text_color=0c1329" />
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&hide_border=true&fire=C77800&ring=0c1329&background=efe141&text_color=0c1329" />
-</p>
+</div>
+
 <div align = "center">
-<img src = "https://activity-graph.herokuapp.com/graph?username=faseehhyder&custom_title=My%20Activity&hide_border=true&bg_color=efe141&radius=5&line=0c1329&point=000000&color=0c1329" width = 805px/>
-		<hr>
-	</div>
+	<img src = "https://activity-graph.herokuapp.com/graph?username=faseehhyder&custom_title=My%20Activity&hide_border=true&bg_color=efe141&radius=5&line=0c1329&point=000000&color=0c1329" width = 805px/>
+	<hr>
+</div>
 
