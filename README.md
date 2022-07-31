@@ -30,7 +30,7 @@
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Tool_Languages.png" width = "30%"/>
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Flutter.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Flutter.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Dart.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Unity.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C%23.png"/>
