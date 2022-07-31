@@ -106,6 +106,7 @@
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&ring=0c1329&show_icons=true&hide_border=true&&bg_color=efe141&title_color=0c1329&icon_color=0c1329&text_color=0c1329" />
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&hide_border=true&fire=C77800&ring=0c1329&background=efe141&text_color=0c1329" />
 </p>
-<div align="center"> <img src="https://raw.githubusercontent.com/muhiqsimui/muhiqsimui/output/github-contribution-grid-snake.svg" /></div>
- <hr>
+<div align = "center">
+<img src = "https://activity-graph.herokuapp.com/graph?username=faseehhyder&custom_title=My%20Activity&hide_border=true&bg_color=efe141&radius=10&line=0c1329&point=000000&color=0c1329" width = 70%/>
+	</div>
 
