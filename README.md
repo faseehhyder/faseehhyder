@@ -20,10 +20,12 @@
 </div>
 
 <div align="center">
-	<a href = "https://twitter.com/faseehhyder33" target="_blank">
+	<a href = "https://twitter.com/faseehhyder33">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
 	</a>
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
+	<a href = "https://www.instagram.com/faseeh.hyder/">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
+	</a>	
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
