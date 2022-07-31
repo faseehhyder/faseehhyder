@@ -1,10 +1,14 @@
 <div class = "header">
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png"/>
 </div>
+
 <div class = "heading_detail" align = "center">
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
-	<br>
-</div>	
+</div>
+<div>
+	<p>20 years old random boy who's intrigues about computers from the very start of life. Let's bring something new in this world which'll change it forever.
+	</p>
+</div>
 <div align = "center">
 <br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
