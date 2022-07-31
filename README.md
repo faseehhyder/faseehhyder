@@ -56,7 +56,7 @@
 <p align="center">
 	<br>
 	<br>
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/CONTIBUTION%20STATS.png" width = "30%"/>
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "30%"/>
 	<br>
 	<br>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
