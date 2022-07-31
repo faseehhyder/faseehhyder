@@ -19,8 +19,9 @@
     <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter%402x.png">
     <br>
   </div>
-
+<div align="center">
 ![](https://komarev.com/ghpvc/?username=faseehhyder&color=yellow)
+	    </div>
 <div class = "container" align = "center">
 	<br>
 	<img height = "150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
