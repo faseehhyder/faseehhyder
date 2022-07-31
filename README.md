@@ -53,16 +53,14 @@
 	<br>
 <img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
+<hr>
 <p align="center">
-	<br>
-	<br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "30%"/>
 	<br>
 	<br>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&theme=material-palenight&hide_border=true&fire=C77800&ring=7C2AE8&background=1F222E" />
 </p>
-
 <div align="center"> <img src="https://raw.githubusercontent.com/muhiqsimui/muhiqsimui/output/github-contribution-grid-snake.svg" /></div>
-  
+ <hr>
 
