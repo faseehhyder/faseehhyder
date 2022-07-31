@@ -63,7 +63,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/faseehhyder/personality_tester" style="color: red"><b>Personality Assessment App</b></a></td>
+      <td><a href="https://github.com/faseehhyder/personality_tester"><b>Personality Assessment App</b></a></td>
       <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
       <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
       <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
