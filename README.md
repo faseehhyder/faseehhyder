@@ -25,9 +25,13 @@
 	</a>
 	<a href = "https://www.instagram.com/faseeh.hyder/">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
-	</a>	
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
+	</a>
+	<a href = "https://www.facebook.com/faseehhyder.2002/">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
+	</a>
+	<a href = "https://www.linkedin.com/in/faseehhyder/">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
+	</a>
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
