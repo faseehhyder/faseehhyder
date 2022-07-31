@@ -48,7 +48,7 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
 <div class="projects" align="center">	
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "40%"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>
 													  <br>
 <table>
   <thead align="center">
