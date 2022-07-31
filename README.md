@@ -27,7 +27,7 @@
 <div align = "center">
 	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=material-palenight&hide_border=true,&layout=compact)](https://github.com/faseehhyder/github-readme-stats"/>
 	</div>
-<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&redirect=true"/>
+<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&redirect=true)
 <p align="center">
 		<br>
