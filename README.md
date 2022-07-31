@@ -42,7 +42,7 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Figma.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Python.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Java.png"/>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C#.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C%23.png/>
 	</div>
 <div class = "music" align = "center">	
 	<br>
