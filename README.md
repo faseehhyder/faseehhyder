@@ -1,6 +1,6 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/BannerTop.png)
   <br>
-  <div class = "heading_detail">
+  <div class = "heading_detail" align = "center>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
 	<br>
 	</div>
