@@ -9,10 +9,9 @@
 	
 <div align = "center">
 <br>
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "30%"/>
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
 </div>
   <div align="center">
-      <br>
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
