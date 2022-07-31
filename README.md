@@ -1,7 +1,4 @@
-![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
-<div align = "center">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/BannerTop.png" width="400">
-</div>
+![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/BannerTop.png)
   <br>
   <div align="center">
   <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Social.png" width = "150">
