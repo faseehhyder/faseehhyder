@@ -1,7 +1,11 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/BannerTop.png)
   <br>
+  <div class = "heading_detail">
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png">
+	<br>
+	</div>
   <div align="center">
-	<h3>Social</h3>
+	<h3>Social</h3>	
   <br>
     <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png">
