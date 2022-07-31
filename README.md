@@ -28,7 +28,8 @@
 	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=material-palenight&hide_border=true,&layout=compact)](https://github.com/faseehhyder/github-readme-stats"/>
 	</div>
 <div class = "music" align = "center">	
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png">
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "40%">
+	<br>
 <img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
 <p align="center">
