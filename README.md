@@ -36,7 +36,7 @@
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
 	</a>
 	<a href = "https://stackoverflow.com/users/14681127/faseeh-hyder">
-		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stack%20Overflow.png">
 	</a>
 </div>
   
