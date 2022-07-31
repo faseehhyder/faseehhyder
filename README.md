@@ -11,6 +11,7 @@
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
   </div>
   
 <p align="center">
