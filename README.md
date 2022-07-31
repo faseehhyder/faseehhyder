@@ -12,6 +12,7 @@
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
   </div>
   
 <p align="center">
