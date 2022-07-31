@@ -17,7 +17,7 @@
   
  
 <div align = "center">
-	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats"/>
+	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=outrun&layout=compact)](https://github.com/anuraghazra/github-readme-stats"/>
 	</div>
 <p align="center">
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
