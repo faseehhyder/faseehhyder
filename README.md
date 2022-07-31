@@ -6,7 +6,7 @@
     <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn%20Icon%402x.png">
     </a>
-    <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord%20Icon%402x.png">
+    <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/discord_alt_macos_bigsur_icon_190236.png">
     <a href = "https://www.instagram.com/faseeh.hyder/" target ="_blank">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram%20Icon%402x.png">
     </a>
