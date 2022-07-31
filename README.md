@@ -1,6 +1,6 @@
 <div class = "header">
 	<hr>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/banner.png"/>
 </div>
 
 <div class = "about_me" align = "center">
