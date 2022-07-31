@@ -1,4 +1,5 @@
 <div class = "header">
+	<hr>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png"/>
 </div>
 
@@ -6,6 +7,7 @@
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
 	<br>
+	<hr width="70%">
 </div>
 <div>
 <p> 20 years old random boy who's facinated by the current technology and computers from the very start of life.
@@ -18,9 +20,9 @@
 	Let's bring something new in this world which'll change it forever.
 </p>
 </div>
-<hr>
 <div align ="center">
-<img src="https://komarev.com/ghpvc/?username=faseehhyder"/>
+	<hr width="70%">
+<img src="https://komarev.com/ghpvc/?username=faseehhyder&color=192342"/>
 </div>
 <div align = "center">
 <br>
@@ -57,8 +59,8 @@
 	<br>
 <img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
-<hr>
 <div class="projects" align="center">	
+	<hr width="70%">
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>								<br>
 	<br>
 <table>
