@@ -47,9 +47,16 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Photoshop.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
+	<div class = "music" align = "center">	
+	<br>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
+	<br>
+<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
+</div>
+<hr>
 <div class="projects" align="center">	
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>
-													  <br>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>								<br>
+	<br>
 <table>
   <thead align="center">
     <tr border: none;>
@@ -85,16 +92,9 @@
   </tbody>
 </table>
 </div>
-
-<div class = "music" align = "center">	
-	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
-	<br>
-<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
-</div>
-<hr>
 <p align="center">
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "30%"/>
+	<br>
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "35%"/>
 	<br>
 	<br>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
