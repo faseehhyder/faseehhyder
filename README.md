@@ -18,6 +18,10 @@
 	Let's bring something new in this world which'll change it forever.
 </p>
 </div>
+<hr>
+<div align ="center">
+<img src="https://komarev.com/ghpvc/?username=faseehhyder"/>
+</div>
 <div align = "center">
 <br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
