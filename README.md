@@ -33,9 +33,16 @@
   </div>
   
 <div class = "tools_languages" align = "center">
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Tool_Languages.png"/>
-<br>
+	<br>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Tool_Languages.png" width = "30%"/>
+	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Flutter.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Dart.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Unity.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Figma.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Python.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Java.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C#.png"/>
 	</div>
 <div class = "music" align = "center">	
 	<br>
