@@ -31,10 +31,13 @@
 	</a>
 	<a href = "https://www.linkedin.com/in/faseehhyder/">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
-	</a>
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
+	<a href= "https://www.reddit.com/user/faseehhyder">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
+	</a>
+	<a href = "https://stackoverflow.com/users/14681127/faseeh-hyder">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
+	</a>
 </div>
   
 <div class = "tools_languages" align = "center">
