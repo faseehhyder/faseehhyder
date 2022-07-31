@@ -29,7 +29,7 @@
 	</div>
 	
 <div>
-	<img src = "(https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&redirect=true)"/>
+	<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&redirect=true"/>
 	[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&redirect=true)
 </div>
 <p align="center">
