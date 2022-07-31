@@ -10,7 +10,7 @@
 <div align = "center">
 <br>
 <br>
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png">
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "30%"/>
 <br>
 </div>
   <div align="center">
