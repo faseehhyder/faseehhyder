@@ -23,10 +23,6 @@
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
   </div>
   
- 
-<div align = "center">
-	<img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=material-palenight&hide_border=true,&layout=compact)](https://github.com/faseehhyder/github-readme-stats"/>
-	</div>
 <div class = "music" align = "center">	
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
