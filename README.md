@@ -5,7 +5,7 @@
 
 <div class = "about_me" align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/about_me.png" width = "70%">
 	<br>
 </div>
 
@@ -16,7 +16,7 @@
 
 <div align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png" width = "40%"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/social_banner.png" width = "40%"/>
 </div>
 
 <div align="center">
@@ -31,7 +31,7 @@
   
 <div class = "tools_languages" align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Tool_Languages.png" width = "30%"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/tools_languages.png" width = "30%"/>
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Flutter.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Dart.png"/>
