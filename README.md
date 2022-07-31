@@ -8,7 +8,7 @@
 	<br>
 </div>
 <div>
-<p>20 years old random boy who's facinated by the current technology and computers from the very start of life.
+<p> 20 years old random boy who's facinated by the current technology and computers from the very start of life.
 	Did lots of surgeries when it comes to hardware and my PC was the most loved patient of mine cuz I always used to tweak and play with its parts and still do.
 	Why I do this? Honestly, I don't know exactly why but the curiousity to dive deep inside these things is never ending and thankx to that I've learned a lot in
 	my life. At the age of 14, I used to play lots of games in Friv (a well known site for playing indie games) and some games used to have a logo named "Unity".
@@ -16,7 +16,7 @@
 	used to create incredible games. So, I gave it a try and uk what I was stuck... it felt like landing on inside a cave and at the time things confused me and I
 	thought to give it a pause.
 	Let's bring something new in this world which'll change it forever.
-	</p>
+</p>
 </div>
 <div align = "center">
 <br>
@@ -32,6 +32,11 @@
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Stackover%20Flow.png">
   </div>
   
+<div class = "tools_languages" align = "center">
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Tool_Languages.png"/>
+<br>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Flutter.png"/>
+	</div>
 <div class = "music" align = "center">	
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
@@ -39,7 +44,7 @@
 <img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
 <p align="center">
-		<br>
+	<br>
 	<br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/CONTIBUTION%20STATS.png" width = "30%"/>
 	<br>
