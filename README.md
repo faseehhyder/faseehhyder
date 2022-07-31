@@ -9,6 +9,15 @@
     <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
     </a>
+    
+    <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
+    </a>
+    
+        <a href = "https://www.linkedin.com/in/faseehhyder/" target ="_blank">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
+    </a>
+    
   </div>
 <p align="center">
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
