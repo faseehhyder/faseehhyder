@@ -39,11 +39,11 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/Flutter.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Dart.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Unity.png"/>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Figma.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C%23.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Python.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Java.png"/>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C%23.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/CPP.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Figma.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Photoshop.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
