@@ -1,6 +1,6 @@
 ![Banner](https://github.com/faseehhyder/faseehhyder/blob/main/Images/Banner.png)
 <div align = "center">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/NameHeading.png" width="400">
+	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Images/BannerTop.png" width="400">
 </div>
   <br>
   <div align="center">
