@@ -20,7 +20,9 @@
 </div>
 
 <div align="center">
-	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
+	<a href = "https://twitter.com/faseehhyder33" target="_blank">
+		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
+	</a>
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
