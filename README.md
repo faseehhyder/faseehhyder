@@ -70,24 +70,24 @@
   <tbody>
     <tr>
       <td><a href="https://github.com/faseehhyder/personality_tester"><b>Personality Assessment App</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/personality_tester?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/personality_tester?style=flat&labelColor=343b41"/></td>
     </tr>
 	  <tr>
       <td><a href="https://github.com/faseehhyder/2d-platfomer-game"><b>2D Platformer Game</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/2d-platfomer-game?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/2d-platfomer-game?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/2d-platfomer-game?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/2d-platfomer-game?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/2d-platfomer-game?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/2d-platfomer-game?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/2d-platfomer-game?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/2d-platfomer-game?style=flat&labelColor=343b41"/></td>
     </tr>
     <tr>
       <td><a href="https://github.com/faseehhyder/scientific-calculator"><b>Scientific Calculator</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/scientific-calculator?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/scientific-calculator?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/scientific-calculator?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/scientific-calculator?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/scientific-calculator?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/scientific-calculator?style=flat&labelColor=343b41"/></td>
+      <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/scientific-calculator?style=flate&labelColor=343b41"/></td>
+      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/scientific-calculator?style=flat&labelColor=343b41"/></td>
     </tr>
   </tbody>
 </table>
