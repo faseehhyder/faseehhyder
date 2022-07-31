@@ -103,8 +103,8 @@
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "35%"/>
 	<br>
 	<br>
-  <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=1F222E" />
-  <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&theme=material-palenight&hide_border=true&fire=C77800&ring=7C2AE8&background=1F222E" />
+  <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&show_icons=true&hide_border=true&bg_color=efe141&title_color=0c1329&icon_color=0c1329" />
+  <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&hide_border=true&fire=C77800&ring=7C2AE8&background=efe141" />
 </p>
 <div align="center"> <img src="https://raw.githubusercontent.com/muhiqsimui/muhiqsimui/output/github-contribution-grid-snake.svg" /></div>
  <hr>
