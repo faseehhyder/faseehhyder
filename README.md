@@ -43,6 +43,9 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Python.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Java.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/C%23.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/CPP.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Photoshop.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
 <div class = "music" align = "center">	
 	<br>
