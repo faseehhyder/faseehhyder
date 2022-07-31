@@ -9,6 +9,8 @@
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Instagram.png">
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Facebook.png">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
+      <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
   </div>
   
 <p align="center">
