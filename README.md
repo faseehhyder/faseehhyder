@@ -4,6 +4,15 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/DETAIL.png" width = "70%">
 	<br>
 	</div>
+	
+	
+	
+<div align = "center">
+<br>
+<br>
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/PLACES%20YOU%20CAN%20FIND%20ME%20IN.png">
+<br>
+</div>
   <div align="center">
       <br>
       <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter.png">
