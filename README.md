@@ -20,9 +20,9 @@
     <img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Twitter%402x.png">
     <br>
   </div>
-  
+
+![](https://komarev.com/ghpvc/?username=faseehhyder&color=yellow)
 <div class = "container" align = "center">
-	![](https://komarev.com/ghpvc/?username=faseehhyder&color=yellow)
 	<br>
 	<img height = "150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=faseehhyder&theme=github_dark&hide=TeX&layout=compact"/>
 	<img height = "150px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&&show_icons=true&theme=github_dark"/>
