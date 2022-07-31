@@ -47,7 +47,7 @@
 
 <div class = "music" align = "center">	
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/LISTENING.png" width = "150px"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/listening.png" width = "150px"/>
 	<br>
 	<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
