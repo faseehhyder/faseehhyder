@@ -88,7 +88,7 @@
 </div>
 <p align="center">
 	<br>
-<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_states.png" width = "35%"/>
+<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_stats.png" width = "35%"/>
 	<br>
 	<br>
   <img width="400px" src="https://github-readme-stats.vercel.app/api?username=faseehhyder&count_private=true&ring=0c1329&show_icons=true&hide_border=true&&bg_color=efe141&title_color=0c1329&icon_color=0c1329&text_color=0c1329" />
