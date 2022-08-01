@@ -5,7 +5,7 @@
 
 <div class = "about_me" align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/about_me.png" width = "70%">
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/about_me.png" width = "80%">
 	<br>
 </div>
 
