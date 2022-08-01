@@ -76,7 +76,7 @@
 		  <td><b>⭐ Stars</b></td>
 		  <td><b>📚 Forks</b></td>
 		  <td><b>🛎 Issues</b></td>
-		  <td><b>📬 Pull requests</b></td>
+		  <td><b>📬 Pull Requests</b></td>
 		</tr>
 	  </thead>
 	  <tbody>
