@@ -16,7 +16,7 @@
 
 <div align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/social_banner.png" width = "40%"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/social_banner.png" width = "45%"/>
 </div>
 
 <div align="center">
@@ -45,7 +45,7 @@
   
 <div class = "tools_languages" align = "center">
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/tools_languages.png" width = "30%"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/tools_languages.png" width = "35%"/>
 	<br>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Flutter.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Dart.png"/>
@@ -61,7 +61,7 @@
 
 <div class = "music" align = "center">	
 	<br>
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/listening.png" width = "150px"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/listening.png" width = "180px"/>
 	<br>
 	<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
