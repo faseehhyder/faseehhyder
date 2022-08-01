@@ -55,6 +55,7 @@
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Java.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/CPP.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Figma.png"/>
+	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Blender.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Photoshop.png"/>
 	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Illustrator.png"/>
 	</div>
