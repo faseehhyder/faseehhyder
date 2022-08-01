@@ -31,6 +31,7 @@
 	</a>
 	<a href = "https://www.linkedin.com/in/faseehhyder/">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
+	</a>
 	<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
 	<a href= "https://www.reddit.com/user/faseehhyder">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Reddit.png">
