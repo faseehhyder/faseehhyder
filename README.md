@@ -32,7 +32,7 @@
 	<a href = "https://www.linkedin.com/in/faseehhyder/">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/LinkedIn.png">
 	</a>
-	<a href="/discord.com/users/779371961221382195">
+	<a href="https://discord.com/users/779371961221382195">
 		<img src="https://github.com/faseehhyder/faseehhyder/blob/main/Icons/Discord.png">
 	</a>
 	<a href= "https://www.reddit.com/user/faseehhyder">
