@@ -76,8 +76,4 @@
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com?user=faseehhyder&hide_border=true&fire=C77800&ring=0c1329&background=efe141&text_color=0c1329" />
 </div>
 
-<div align = "center">
-	<img src = "https://activity-graph.herokuapp.com/graph?username=faseehhyder&custom_title=My%20Activity&hide_border=true&bg_color=efe141&radius=5&line=0c1329&point=000000&color=0c1329" width = 805px/>
-	<hr>
-</div>
 
