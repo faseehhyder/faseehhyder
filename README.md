@@ -67,47 +67,6 @@
 	<img src = "https://spotify-github-profile.vercel.app/api/view?uid=hlerx6966y3z1l53bz2ixfhfw&cover_image=true&theme=natemoo-re&bar_color=fbfe39&bar_color_cover=false">
 </div>
 
-<div class="projects" align="center">	
-	<hr width="70%">
-	<img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/projects.png" width = "150px"/>								<br>
-	<br>
-	
-<table>
-	  <thead align="center">
-		<tr border: none;>
-		  <td><b>🖥️ Projects</b></td>
-		  <td><b>⭐ Stars</b></td>
-		  <td><b>📚 Forks</b></td>
-		  <td><b>🛎 Issues</b></td>
-		  <td><b>📬 Pull Requests</b></td>
-		</tr>
-	  </thead>
-	  <tbody>
-		<tr>
-		  <td><a href="https://github.com/faseehhyder/personality_tester"><b>Personality Assessment App</b></a></td>
-		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/personality_tester?style=flat&color=efe141&labelColor=192342"/></td>
-		</tr>
-		  <tr>
-		  <td><a href="https://github.com/faseehhyder/2d-platfomer-game"><b>2D Platformer Game</b></a></td>
-		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/2d-platfomer-game?style=flat&color=efe141&labelColor=192342"/></td>
-		</tr>
-		<tr>
-		  <td><a href="https://github.com/faseehhyder/scientific-calculator"><b>Scientific Calculator</b></a></td>
-		  <td><img alt="Stars" src="https://img.shields.io/github/stars/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Forks" src="https://img.shields.io/github/forks/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Issues" src="https://img.shields.io/github/issues/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-		  <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/faseehhyder/scientific-calculator?style=flat&color=efe141&labelColor=192342"/></td>
-		</tr>
-	  </tbody>
-	</table>
-</div>
-
 <div align="center">
 	<br>
 <img src = "https://github.com/faseehhyder/faseehhyder/blob/main/Images/contribution_stats.png" width = "35%"/>
