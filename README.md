@@ -1,12 +1,10 @@
-<p align="center">
-  <a href="https://faseehhyder.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./hero-dark.png"><img src="./hero.png" alt="faseehhyder.com: Faseeh Hyder, product engineer" width="100%"></picture></a>
-</p>
+<a href="https://faseehhyder.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./hero-dark.svg"><img src="./hero-light.svg" alt="Hi, I'm Faseeh Hyder. I'm a product engineer and co-founder of Renew Reminder." width="100%"></picture></a>
 
-<p align="center">
-  <a href="https://faseehhyder.com"><img src="https://img.shields.io/badge/Portfolio-faseehhyder.com-131312?style=for-the-badge" alt="Portfolio"></a>
-  <a href="https://faseehhyder.com/work/"><img src="https://img.shields.io/badge/Case_studies-3-131312?style=for-the-badge" alt="Case studies"></a>
-  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-131312?style=for-the-badge" alt="CV"></a>
-  <a href="https://www.linkedin.com/in/faseehhyder"><img src="https://img.shields.io/badge/LinkedIn-faseehhyder-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<p>
+  <a href="https://faseehhyder.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/site-dark.svg"><img src="./buttons/site-light.svg" alt="faseehhyder.com" height="42"></picture></a>
+  <a href="https://faseehhyder.com/work/"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/work-dark.svg"><img src="./buttons/work-light.svg" alt="Case studies" height="42"></picture></a>
+  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/cv-dark.svg"><img src="./buttons/cv-light.svg" alt="CV (PDF)" height="42"></picture></a>
+  <a href="https://www.linkedin.com/in/faseehhyder"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/linkedin-dark.svg"><img src="./buttons/linkedin-light.svg" alt="LinkedIn" height="42"></picture></a>
 </p>
 
 ## Products I've built
