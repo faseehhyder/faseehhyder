@@ -1,11 +1,16 @@
-// Draws this profile's banner and buttons as SVG from the portfolio's own
-// code and files, not from screenshots: the hero's words and type
-// (src/app/page.tsx, globals.css), its halftone globe and the products
-// circling it (src/components/hero-art), the products' logos, the portrait
-// and the Geist font. Chrome only measures the text, so every line sits
-// where the site puts it; the font is embedded, cut down to the letters used.
+// Draws this profile's art as SVG from the portfolio's own code and files,
+// not from screenshots, each in GitHub's light and dark:
 //
-//   node make-banner.mjs
+// - the banner: the hero's words and type (src/app/page.tsx, globals.css),
+//   its halftone globe and the products circling it
+//   (src/components/hero-art), their logos and the portrait;
+// - the buttons under it, in the site's .btn style with its icons;
+// - the product cards, as the home page draws its work.
+//
+// Chrome only measures the text, so every line sits where the site puts
+// it; the Geist font is embedded, cut down to the letters used.
+//
+//   node make-art.mjs
 //
 // Needs the portfolio next to this folder (../Portfolio, with node_modules),
 // Google Chrome, and fontTools' pyftsubset.
@@ -46,12 +51,17 @@ const AY = H / 2 - 0.475 * S; // the globe's centre on the banner's middle
 const SEC = Number(process.env.SEC ?? 2.2); // the moment of the art's turn
 const LABEL = 16; // the moons' names, in px
 
+// The hero's products (src/lib/hero.ts), in its order round the ring. On
+// the site the moons move, so one is always behind the globe and a name
+// that doesn't fit waits its turn. The banner holds still, so each moon
+// has its own place on the ring (degrees, as ringAt takes them), clear of
+// the globe, and all five are named.
 const PRODUCTS = [
-  { name: "Renew Reminder", logo: "public/logos/renew-reminder.webp" },
-  { name: "SeedSense", logo: "public/logos/seedsense.webp" },
-  { name: "AutoCart", logo: "public/projects/autocart/icon.webp" },
-  { name: "Timeliner", logo: "public/logos/timeliner.webp" },
-  { name: "myValerio", logo: "public/logos/myvalerio.webp" },
+  { name: "Renew Reminder", logo: "public/logos/renew-reminder.webp", at: 95 },
+  { name: "SeedSense", logo: "public/logos/seedsense.webp", at: 155 },
+  { name: "AutoCart", logo: "public/projects/autocart/icon.webp", at: 220 },
+  { name: "Timeliner", logo: "public/logos/timeliner.webp", at: 320 },
+  { name: "myValerio", logo: "public/logos/myvalerio.webp", at: 35 },
 ];
 
 const BUTTONS = [
@@ -65,10 +75,6 @@ const BUTTONS = [
 
 const D = Math.PI / 180, TAU = Math.PI * 2, U = 1 / 480;
 const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
-const smooth = (a, b, v) => {
-  const t = clamp((v - a) / (b - a), 0, 1);
-  return t * t * (3 - 2 * t);
-};
 const n1 = (v) => +v.toFixed(1), n2 = (v) => +v.toFixed(2);
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -320,10 +326,11 @@ function art(t) {
   const li = t.lightInk, L = light(SEC), sec = SEC, u = S * U;
   const toPx = (x, y) => [S * 0.5 + x * S, S * 0.45 + y * S];
   const disc = (x, y, r) => `<circle cx="${n1(x)}" cy="${n1(y)}" r="${n2(r)}" fill="${t.bg}"/>`;
-  const R = 0.25, gcy = 0.025, spc = R * STEP * D, ORBIT = 1.62, SPEED = 0.15, SIZE = 0.058, LOGO = 0.8;
+  const R = 0.25, gcy = 0.025, spc = R * STEP * D, ORBIT = 1.62, SIZE = 0.058, LOGO = 0.8;
   const [gx, gy] = toPx(0, gcy), Rp = R * S;
-  const moons = PRODUCTS.map((_, k) => {
-    const [X, Y, z] = ringAt(0.6 + (k * TAU) / PRODUCTS.length + sec * SPEED, ORBIT);
+  const moons = PRODUCTS.map((p, k) => {
+    const [X, Y, z] = ringAt(p.at * D, ORBIT);
+    if (z < 0 && Math.hypot(X, Y) < 1.15) throw new Error(`${p.name} is behind the globe`);
     return { k, x: gx + X * Rp, y: gy + Y * Rp, z, mr: SIZE * S * (0.85 + 0.3 * ((z / ORBIT + 1) / 2)) };
   });
 
@@ -392,22 +399,21 @@ function art(t) {
     globe.add(x, y, r * S, a);
   }
 
-  // the names: a tag under each moon, nearest first, left out where it
-  // would sit behind the globe or on a nearer name or moon
+  // the names: a tag under each moon, nearest first, or over it where a
+  // nearer name or moon is in the way
   const tags = [], taken = [];
+  const clash = (box, mo) =>
+    taken.some((r) => r[0] < box[0] + box[2] && box[0] < r[0] + r[2] && r[1] < box[1] + box[3] && box[1] < r[1] + r[3]) ||
+    moons.some((o) => o.k !== mo.k && o.z > mo.z &&
+      Math.hypot(clamp(o.x, box[0], box[0] + box[2]) - o.x, clamp(o.y, box[1], box[1] + box[3]) - o.y) < o.mr);
   for (const mo of [...moons].sort((a, b) => b.z - a.z)) {
-    const fs = LABEL, tw = labels[mo.k].w, w = tw + fs * 1.5, h = fs * 1.9;
-    const lx = clamp(mo.x, 6 + w / 2, S - 6 - w / 2), ly = mo.y + mo.mr + 5 + h / 2;
-    const box = [lx - w / 2, ly - h / 2, w, h];
-    const behind = mo.z < 0 ? smooth(Rp * 1.25, Rp * 0.95, Math.hypot(mo.x - gx, mo.y - gy)) : 0;
-    const crowded =
-      taken.some((r) => r[0] < box[0] + box[2] && box[0] < r[0] + r[2] && r[1] < box[1] + box[3] && box[1] < r[1] + r[3]) ||
-      moons.some((o) => o.k !== mo.k && o.z > mo.z &&
-        Math.hypot(clamp(o.x, box[0], box[0] + box[2]) - o.x, clamp(o.y, box[1], box[1] + box[3]) - o.y) < o.mr);
-    if (crowded || behind > 0.5) continue;
+    const fs = LABEL, w = labels[mo.k].w + fs * 1.5, h = fs * 1.9, gap = mo.mr + 5 + h / 2;
+    const lx = clamp(mo.x, 6 + w / 2, S - 6 - w / 2);
+    const box = [mo.y + gap, mo.y - gap].map((ly) => [lx - w / 2, ly - h / 2, w, h]).find((b) => !clash(b, mo));
+    if (!box) throw new Error(`no room for ${PRODUCTS[mo.k].name}'s name`);
     taken.push(box);
     named.add(PRODUCTS[mo.k].name);
-    const left = clamp(lx - w / 2, 6, S - w - 6), top = clamp(ly - h / 2, 6, S - h - 6);
+    const [left, top] = box;
     tags.push(
       `<rect x="${n1(left)}" y="${n1(top)}" width="${n1(w)}" height="${n1(h)}" rx="${n1(h / 2)}" fill="${t.card}" stroke="${t.line2}"/>` +
       `<text x="${n1(left + fs * 0.75)}" y="${n1(top + h / 2 + labels[mo.k].cap / 2)}" font-size="${fs}" font-weight="500" fill="${t.ink}">${esc(PRODUCTS[mo.k].name)}</text>`,
@@ -473,6 +479,80 @@ ${text.join("\n")}
 `;
 }
 
+// -------------------------------------------------------------- cards --
+
+// The products as the home page shows them (src/components/work-list.tsx,
+// src/app/work-index.css): one card each, its photo behind (Unsplash, see
+// design/covers/photos/README.md) shaded where the text sits, the role and
+// period, the title and its line, the arrow, and the real app on its
+// devices rising from the foot (public/projects/covers/<slug>-stack, light
+// and dark). The README adds a line of facts from each case study.
+const CARD_W = 1200, CARD_H = 560, CARD_R = 28, CARD_PAD = 48;
+const CARD_TEXT = 200; // the text band; the devices take the rest
+const CARDS = [
+  {
+    slug: "renew-reminder", title: "Renew Reminder", byline: "Co-founder · 2025 – now",
+    line: "Keeping track of recurring payments.", pos: [0.5, 0.5],
+    // short: the photo's phone starts where a longer line would end
+    facts: [["110+", 1], [" sign-ups · "], ["App Store", 1], [", "], ["Google Play", 1], [" and web"]],
+  },
+  {
+    slug: "autocart", title: "AutoCart", byline: "Engineer · 2026 – now",
+    line: "A vehicle marketplace for Ireland and the UK.", pos: [0.5, 0.62],
+    facts: [["React Native app", 1], [", "], ["backend", 1], [", "], ["admin", 1], [" and "], ["website", 1]],
+  },
+  {
+    slug: "seedsense", title: "SeedSense", byline: "Main engineer · 2024 – now",
+    line: "Crop-trial software that works offline.", pos: [0.5, 0.55],
+    facts: [["856", 1], [" of 1,058 commits · "], ["2,100+", 1], [" tests · catalog load "], ["10.2 s", 1], [" to "], ["0.2 s", 1]],
+  },
+];
+const RING = { light: "rgba(19,19,18,.07)", dark: "rgba(255,255,255,.07)" };
+
+/** An image cut to w x h as object-fit: cover with object-position pos. */
+async function coverCrop(file, w, h, [px, py]) {
+  const { width, height } = await sharp(file).metadata();
+  const k = Math.max(w / width, h / height), sw = Math.round(width * k), sh = Math.round(height * k);
+  return (await sharp(file).resize(sw, sh)
+    .extract({ left: Math.round((sw - w) * px), top: Math.round((sh - h) * py), width: w, height: h })
+    .webp({ quality: 74 }).toBuffer()).toString("base64");
+}
+
+async function card(c, theme) {
+  const scale = 4 / 3; // images at 1600 wide, sharp on a retina screen
+  const photo = await coverCrop(join(SITE, `public/projects/covers/photos/${c.slug}.webp`),
+    Math.round(CARD_W * scale), Math.round(CARD_H * scale), c.pos);
+  const AH = Math.min((CARD_W * 920) / 2400, CARD_H - CARD_TEXT), AW = (AH * 2400) / 920;
+  const art = (await sharp(join(SITE, `public/projects/covers/${c.slug}-stack${theme === "dark" ? "-dark" : ""}.webp`))
+    .resize(Math.round(AW * scale)).webp({ quality: 80, alphaQuality: 90 }).toBuffer()).toString("base64");
+  const font = subset(c.byline + c.title + c.line + c.facts.map(([t]) => t).join(""));
+  const facts = c.facts
+    .map(([t, strong]) => (strong ? `<tspan fill="#fff" font-weight="500">${esc(t)}</tspan>` : esc(t)))
+    .join("");
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${CARD_W}" height="${CARD_H}" viewBox="0 0 ${CARD_W} ${CARD_H}" role="img" aria-labelledby="title">
+<title id="title">${esc(`${c.title}: ${c.line} ${c.byline}.`)}</title>
+<defs><style>${fontFace(font)}text{font-family:G,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
+<clipPath id="card"><rect width="${CARD_W}" height="${CARD_H}" rx="${CARD_R}"/></clipPath>
+<linearGradient id="across"><stop offset="0" stop-opacity=".62"/><stop offset=".36" stop-opacity=".3"/><stop offset=".6" stop-opacity="0"/></linearGradient>
+<linearGradient id="down" x2="0" y2="1"><stop offset="0" stop-opacity=".42"/><stop offset=".42" stop-opacity="0"/></linearGradient>
+</defs>
+<g clip-path="url(#card)">
+<rect width="${CARD_W}" height="${CARD_H}" fill="#141413"/>
+<image xlink:href="data:image/webp;base64,${photo}" width="${CARD_W}" height="${CARD_H}"/>
+<rect width="${CARD_W}" height="${CARD_H}" fill="url(#across)"/>
+<rect width="${CARD_W}" height="${CARD_H}" fill="url(#down)"/>
+<image xlink:href="data:image/webp;base64,${art}" x="${n1((CARD_W - AW) / 2)}" y="${n1(CARD_H - AH)}" width="${n1(AW)}" height="${n1(AH)}"/>
+<text x="${CARD_PAD}" y="64" font-size="16" fill="rgba(255,255,255,.7)">${esc(c.byline)}</text>
+<text x="${CARD_PAD}" y="122" font-size="50.4" font-weight="500" letter-spacing="-2.27" fill="#fff">${esc(c.title)}</text>
+<text x="${CARD_PAD}" y="160" font-size="20" fill="rgba(255,255,255,.86)">${esc(c.line)}</text>
+<text x="${CARD_PAD}" y="192" font-size="17" fill="rgba(255,255,255,.72)">${facts}</text>
+<g transform="translate(${n1(CARD_W - 40.8 - 33)} 47) scale(${22 / 24})" fill="none" stroke="#fff" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></g>
+<rect x=".5" y=".5" width="${CARD_W - 1}" height="${CARD_H - 1}" rx="${CARD_R - 0.5}" fill="none" stroke="${RING[theme]}"/>
+</g>
+</svg>
+`;
+}
+
 // ------------------------------------------------------------ buttons --
 
 // Icons on the site's grid (src/components/icons.tsx): 24 units, a 1.75
@@ -511,4 +591,8 @@ BUTTONS.forEach((b, i) => {
   }
 });
 for (const [name, t] of Object.entries(THEMES)) writeFileSync(join(HERE, `hero-${name}.svg`), banner(t));
+mkdirSync(join(HERE, "cards"), { recursive: true });
+for (const c of CARDS) {
+  for (const name of Object.keys(THEMES)) writeFileSync(join(HERE, "cards", `${c.slug}-${name}.svg`), await card(c, name));
+}
 console.log(JSON.stringify({ sec: SEC, named: [...named], buttons: sizes }));

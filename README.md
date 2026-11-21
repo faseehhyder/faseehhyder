@@ -11,28 +11,11 @@
 
 Most of my code lives in private company and client repositories, so each card opens a case study instead: the screens, the decisions and the trade-offs.
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <a href="https://faseehhyder.com/work/seedsense/"><img src="https://faseehhyder.com/work/seedsense/opengraph-image" alt="SeedSense case study"></a>
-      <h3>SeedSense</h3>
-      <p>Crop-trial software that keeps working offline in the field.</p>
-      <p><b>856</b> of 1,058 commits · <b>2,100+</b> tests · catalog <b>10.2 s → 0.2 s</b></p>
-    </td>
-    <td width="33%" valign="top">
-      <a href="https://faseehhyder.com/work/renew-reminder/"><img src="https://faseehhyder.com/work/renew-reminder/opengraph-image" alt="Renew Reminder case study"></a>
-      <h3>Renew Reminder</h3>
-      <p>Subscription and spend management I co-founded.</p>
-      <p>Live on the <b>App Store</b>, <b>Google Play</b> and the web · <b>110+</b> sign-ups</p>
-    </td>
-    <td width="33%" valign="top">
-      <a href="https://faseehhyder.com/work/autocart/"><img src="https://faseehhyder.com/work/autocart/opengraph-image" alt="AutoCart case study"></a>
-      <h3>AutoCart</h3>
-      <p>A vehicle marketplace for Ireland and the UK.</p>
-      <p>React Native app, backend, admin and website</p>
-    </td>
-  </tr>
-</table>
+<a href="https://faseehhyder.com/work/renew-reminder/"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/renew-reminder-dark.svg"><img src="./cards/renew-reminder-light.svg" alt="Renew Reminder: keeping track of recurring payments. Co-founder, 2025 to now. 110+ sign-ups, on the App Store, Google Play and the web." width="100%"></picture></a>
+
+<a href="https://faseehhyder.com/work/autocart/"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/autocart-dark.svg"><img src="./cards/autocart-light.svg" alt="AutoCart: a vehicle marketplace for Ireland and the UK. Engineer, 2026 to now. React Native app, backend, admin and website." width="100%"></picture></a>
+
+<a href="https://faseehhyder.com/work/seedsense/"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/seedsense-dark.svg"><img src="./cards/seedsense-light.svg" alt="SeedSense: crop-trial software that works offline. Main engineer, 2024 to now. 856 of 1,058 commits, 2,100+ tests, catalog load from 10.2 s to 0.2 s." width="100%"></picture></a>
 
 ## How I work
 
