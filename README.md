@@ -27,6 +27,11 @@ Most of my code lives in private company and client repositories, so each card o
 
 ## Open to work
 
-Mobile and full-stack roles, remote or on-site. Based in Pakistan (UTC+5), relocating: **Germany and the EU first**. My degree is recognised in Germany (anabin H+).
+<a href="https://faseehhyder.com/contact/"><picture><source media="(prefers-color-scheme: dark)" srcset="./sections/contact-dark.svg"><img src="./sections/contact-light.svg" alt="Open to mobile and full-stack roles. Remote or on-site, and ready to relocate: Germany and the EU first. Email: faseehhyder33@gmail.com. Location: Pakistan, open to relocation worldwide. Work authorization: requires visa sponsorship. Availability: immediately. Degree: recognized in Germany (anabin H+). Languages: English (fluent), Urdu (native), Sindhi (native). Time zone: PKT (UTC+5)." width="100%"></picture></a>
 
-**faseehhyder33@gmail.com** · [LinkedIn](https://www.linkedin.com/in/faseehhyder) · [faseehhyder.com](https://faseehhyder.com)
+<p>
+  <a href="mailto:faseehhyder33@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/email-dark.svg"><img src="./buttons/email-light.svg" alt="Email faseehhyder33@gmail.com" height="42"></picture></a>
+  <a href="https://faseehhyder.com/contact/"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/message-dark.svg"><img src="./buttons/message-light.svg" alt="Send a message" height="42"></picture></a>
+  <a href="https://www.linkedin.com/in/faseehhyder"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/linkedin-dark.svg"><img src="./buttons/linkedin-light.svg" alt="LinkedIn" height="42"></picture></a>
+  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="./buttons/cv-dark.svg"><img src="./buttons/cv-light.svg" alt="CV (PDF)" height="42"></picture></a>
+</p>

@@ -7,7 +7,8 @@
 // - the buttons under it, in the site's .btn style with its icons;
 // - the product cards, as the home page draws its work;
 // - "How I work" and "What clients say": the site's toolkit, with each
-//   tool's logo, and its client reviews, read from the site's source.
+//   tool's logo, and its client reviews, read from the site's source;
+// - "Open to work": the site's contact card, with its hiring details.
 //
 // Chrome only measures the text, so every line sits where the site puts
 // it; the Geist font is embedded, cut down to the letters used.
@@ -34,11 +35,11 @@ const FONT = join(SITE, "node_modules/@fontsource-variable/geist/files/geist-lat
 // pal.light: light ink on a dark page, where its dots grow toward the light.
 const THEMES = {
   light: {
-    bg: "#fafaf9", card: "#ffffff", ink: "#131312", text2: "#3c3c39", muted: "#6b6a65", soft: "#8f8e88",
+    bg: "#fafaf9", surface: "#f1f0ec", card: "#ffffff", ink: "#131312", text2: "#3c3c39", muted: "#6b6a65", soft: "#8f8e88",
     line: "#e5e4df", line2: "#d3d2cc", frame: "#ffffff", shadow: "19,19,18", lightInk: false,
   },
   dark: {
-    bg: "#0f0f0e", card: "#1d1d1c", ink: "#f2f1ed", text2: "#c8c7c1", muted: "#9b9a94", soft: "#6c6b66",
+    bg: "#0f0f0e", surface: "#191918", card: "#1d1d1c", ink: "#f2f1ed", text2: "#c8c7c1", muted: "#9b9a94", soft: "#6c6b66",
     line: "#2a2a28", line2: "#3b3b38", frame: "#2a2a28", shadow: "0,0,0", lightInk: true,
   },
 };
@@ -71,6 +72,9 @@ const BUTTONS = [
   { file: "work", label: "Case studies", icon: "stack" },
   { file: "cv", label: "CV", icon: "doc" },
   { file: "linkedin", label: "LinkedIn", icon: "linkedin" },
+  // under "Open to work"
+  { file: "email", label: "", icon: "mail", primary: true }, // the address, from the site
+  { file: "message", label: "Send a message", icon: "send" },
 ];
 
 // ------------------------------------------------------------ helpers --
@@ -300,6 +304,37 @@ const CLIENTS_PAGE = sectionPage(`
 <figure class="featured"><p data-role="ink">“${esc(FEATURED.text)}”</p><p class="cap" data-role="muted">${citeHtml(FEATURED)}</p></figure>
 <ul class="grid">${QUOTES.map((q) => `<li><p class="q" data-role="text2">“${esc(q.text)}”</p><p class="cap" data-role="muted">${citeHtml(q)}</p></li>`).join("")}</ul>`);
 
+// "Open to work": the card that closes every page of the site
+// (src/components/contact.tsx, contact-section.css), with the hiring
+// details from src/lib/content.ts (`hiring`, the standard edition's
+// values) and the email from src/lib/edition.ts.
+const edition = source("src/lib/edition.ts");
+const EMAIL = edition.match(/email: "([^"]+)"/)[1];
+BUTTONS.find((b) => b.file === "email").label = EMAIL;
+const forEmployers = (key) => content.match(new RegExp(`${key}: marketplace\\s*\\?\\s*[^:]+:\\s*"([^"]+)"`))[1];
+const HIRING = [
+  ["Location", forEmployers("location")],
+  ["Work authorization", forEmployers("workAuthorization")],
+  ["Availability", forEmployers("availability")],
+  ["Degree", "Recognized in Germany (anabin H+)"],
+  ["Languages", [...content.match(/languages: \[([^\]]+)\]/)[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]).join(" · ")],
+  ["Time zone", content.match(/timeZone: "([^"]+)"/)[1]],
+];
+const CONTACT_PAGE = sectionPage(`
+.card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);align-items:end;gap:40px;padding:40px}
+.title{max-width:13em;font-size:34px;font-weight:450;line-height:1.06;letter-spacing:-.035em;text-wrap:balance}
+.title > span{display:block}
+.nw{white-space:nowrap}
+.addr{display:grid;gap:6px;padding-bottom:20px;border-bottom:1px solid}
+.addr-label{font-size:13px;line-height:1.4}
+.addr-mail{font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-.02em}
+.details{display:grid;grid-template-columns:max-content minmax(0,1fr);margin-top:18px;font-size:15px;line-height:1.65}
+.details div{display:contents}
+.details dt{padding-right:28px}
+`, `<div class="card" data-box="card"><h2 class="title" data-role="ink">Open to mobile and full-stack roles. <span data-role="muted">Remote or <span class="nw">on-site,</span> and ready to relocate: Germany and the EU first.</span></h2>
+<div><div class="addr"><span class="addr-label" data-role="muted">Email</span><span class="addr-mail" data-role="ink">${esc(EMAIL)}</span></div>
+<dl class="details">${HIRING.map(([k, v]) => `<div><dt data-role="muted">${esc(k)}</dt><dd data-role="ink">${esc(v)}</dd></div>`).join("")}</dl></div></div>`);
+
 const page = join(TMP, "layout.html");
 writeFileSync(page, PAGE);
 const buttonType = [15, 500, -0.15]; // .btn: 15px, 500, -0.01em
@@ -311,7 +346,7 @@ const { layout, labels, buttons, sections } = await withChrome(async ({ send, ev
   const labels = await evaluate(MEASURE(PRODUCTS.map((p) => [p.name, LABEL, 500, 0])));
   const buttons = await evaluate(MEASURE(BUTTONS.map((b) => [b.label, ...buttonType])));
   const sections = {};
-  for (const [name, html] of Object.entries({ how: HOW_PAGE, clients: CLIENTS_PAGE })) {
+  for (const [name, html] of Object.entries({ how: HOW_PAGE, clients: CLIENTS_PAGE, contact: CONTACT_PAGE })) {
     const file = join(TMP, `${name}.html`);
     writeFileSync(file, html);
     await send("Page.navigate", { url: `file://${file}` });
@@ -661,19 +696,22 @@ function inlineLogo(b) {
 
 /** A laid-out section on a clear ground: hairlines, logos in the text
  *  colour (as the site masks them), and its text. */
-function section(L, t, label) {
-  const H = Math.ceil(L.height);
+function section(L, t, label, rule = t.line) {
+  const H = Math.ceil(L.height), card = L.boxes.find((b) => b.file === "card");
+  const logos = L.boxes.filter((b) => b.file.endsWith(".svg"));
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${PANEL_W}" height="${H}" viewBox="0 0 ${PANEL_W} ${H}" role="img" aria-label="${esc(label)}">
 <defs><style>${fontFace(subset(L.runs.map((r) => r.text).join("")))}text{font-family:G,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
 <filter id="ink" color-interpolation-filters="sRGB"><feFlood flood-color="${t.ink}"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs>
-${L.rules.map((r) => `<rect x="${n1(r.x)}" y="${n1(r.y)}" width="${n1(r.w)}" height="1" fill="${t.line}"/>`).join("")}
-<g filter="url(#ink)">${L.boxes.map(inlineLogo).join("")}</g>
+${card ? `<rect x="${n1(card.x + 0.5)}" y="${n1(card.y + 0.5)}" width="${n1(card.w - 1)}" height="${n1(card.h - 1)}" rx="24" fill="${t.surface}" stroke="${t.line}"/>` : ""}
+${L.rules.map((r) => `<rect x="${n1(r.x)}" y="${n1(r.y)}" width="${n1(r.w)}" height="1" fill="${rule}"/>`).join("")}
+${logos.length ? `<g filter="url(#ink)">${logos.map(inlineLogo).join("")}</g>` : ""}
 ${textSvg(L.runs, t)}
 </svg>
 `;
 }
 
 const HOW_LABEL = `Across the product, beyond the interface. Toolkit: ${TOOLKIT.map((g) => `${g.area}: ${g.tools.map((x) => x.name).join(", ")}`).join("; ")}. Principles: ${PRINCIPLES.join(" ")}`;
+const CONTACT_LABEL = `Open to mobile and full-stack roles. Remote or on-site, and ready to relocate: Germany and the EU first. Email: ${EMAIL}. ${HIRING.map(([k, v]) => `${k}: ${v}`).join(". ")}.`;
 const CLIENTS_LABEL = `${RATINGS.join(". ")}. ${[FEATURED, ...QUOTES].map((q) => `“${q.text}” ${cite(q)}.`).join(" ")}`;
 
 // ------------------------------------------------------------ buttons --
@@ -683,6 +721,8 @@ const CLIENTS_LABEL = `${RATINGS.join(". ")}. ${[FEATURED, ...QUOTES].map((q) =>
 const ICONS = {
   globe: () => `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/>`,
   stack: () => `<rect x="3" y="8" width="14" height="13" rx="2.5"/><path d="M7 4.5h10.5A3 3 0 0 1 20.5 7.5V17"/>`,
+  mail: () => `<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 6 8.5-6"/>`,
+  send: () => `<path d="M21 3 10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z"/>`,
   doc: () => `<path d="M14 3H7.5A2.5 2.5 0 0 0 5 5.5v13A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>`,
   linkedin: (fg, bg) =>
     `<rect x="2.5" y="2.5" width="19" height="19" rx="3.5" fill="${fg}" stroke="none"/>` +
@@ -718,6 +758,7 @@ mkdirSync(join(HERE, "sections"), { recursive: true });
 for (const [name, t] of Object.entries(THEMES)) {
   writeFileSync(join(HERE, "sections", `how-${name}.svg`), section(sections.how, t, HOW_LABEL));
   writeFileSync(join(HERE, "sections", `clients-${name}.svg`), section(sections.clients, t, CLIENTS_LABEL));
+  writeFileSync(join(HERE, "sections", `contact-${name}.svg`), section(sections.contact, t, CONTACT_LABEL, t.line2));
 }
 mkdirSync(join(HERE, "cards"), { recursive: true });
 for (const c of CARDS) {
