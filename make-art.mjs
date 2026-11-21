@@ -5,7 +5,9 @@
 //   its halftone globe and the products circling it
 //   (src/components/hero-art), their logos and the portrait;
 // - the buttons under it, in the site's .btn style with its icons;
-// - the product cards, as the home page draws its work.
+// - the product cards, as the home page draws its work;
+// - "How I work" and "What clients say": the site's toolkit, with each
+//   tool's logo, and its client reviews, read from the site's source.
 //
 // Chrome only measures the text, so every line sits where the site puts
 // it; the Geist font is embedded, cut down to the letters used.
@@ -32,11 +34,11 @@ const FONT = join(SITE, "node_modules/@fontsource-variable/geist/files/geist-lat
 // pal.light: light ink on a dark page, where its dots grow toward the light.
 const THEMES = {
   light: {
-    bg: "#fafaf9", card: "#ffffff", ink: "#131312", muted: "#6b6a65", soft: "#8f8e88",
+    bg: "#fafaf9", card: "#ffffff", ink: "#131312", text2: "#3c3c39", muted: "#6b6a65", soft: "#8f8e88",
     line: "#e5e4df", line2: "#d3d2cc", frame: "#ffffff", shadow: "19,19,18", lightInk: false,
   },
   dark: {
-    bg: "#0f0f0e", card: "#1d1d1c", ink: "#f2f1ed", muted: "#9b9a94", soft: "#6c6b66",
+    bg: "#0f0f0e", card: "#1d1d1c", ink: "#f2f1ed", text2: "#c8c7c1", muted: "#9b9a94", soft: "#6c6b66",
     line: "#2a2a28", line2: "#3b3b38", frame: "#2a2a28", shadow: "0,0,0", lightInk: true,
   },
 };
@@ -172,6 +174,7 @@ const LAYOUT = `(async () => {
   const runs = [];
   const tw = document.createTreeWalker(document.getElementById("root"), NodeFilter.SHOW_TEXT);
   for (let node; (node = tw.nextNode()); ) {
+    if (!node.data.trim()) continue; // the gaps between elements
     const el = node.parentElement, cs = getComputedStyle(el);
     const style = {
       size: parseFloat(cs.fontSize), weight: cs.fontWeight, ls: parseFloat(cs.letterSpacing) || 0,
@@ -199,11 +202,22 @@ const LAYOUT = `(async () => {
     }
     push();
   }
-  const box = (sel) => {
-    const r = document.querySelector(sel).getBoundingClientRect();
+  const rect = (el) => {
+    const r = el.getBoundingClientRect();
     return { x: r.left, y: r.top, w: r.width, h: r.height };
   };
-  return { runs, status: box(".status"), photo: box(".photo"), height: document.getElementById("root").offsetHeight };
+  const box = (sel) => (document.querySelector(sel) ? rect(document.querySelector(sel)) : null);
+  // the logos (data-box: the file), and the hairlines: a top or bottom border
+  // on an element with no side borders
+  const boxes = [...document.querySelectorAll("[data-box]")].map((el) => ({ file: el.dataset.box, ...rect(el) }));
+  const rules = [];
+  for (const el of document.querySelectorAll("#root *")) {
+    const cs = getComputedStyle(el), r = el.getBoundingClientRect();
+    if (parseFloat(cs.borderLeftWidth)) continue;
+    if (parseFloat(cs.borderTopWidth)) rules.push({ x: r.left, y: r.top, w: r.width });
+    if (parseFloat(cs.borderBottomWidth)) rules.push({ x: r.left, y: r.bottom - 1, w: r.width });
+  }
+  return { runs, boxes, rules, status: box(".status"), photo: box(".photo"), height: document.getElementById("root").offsetHeight };
 })()`;
 
 // Widths of single lines, and the cap height, for the tags and buttons.
@@ -217,17 +231,94 @@ const MEASURE = (items) => `(async () => {
   });
 })()`;
 
+// "How I work" and "What clients say", set as the site sets them, read
+// from its source: the Experience section's statement and toolkit
+// (src/components/experience.tsx, experience.css; src/lib/content.ts) and
+// the About page's reviews (src/components/testimonials.tsx,
+// testimonials.css; src/lib/testimonials.ts). Drawn at the README's own
+// width, with no background, so they sit on GitHub's page as the site's
+// sections sit on its own.
+const PANEL_W = 860;
+const source = (f) => readFileSync(join(SITE, f), "utf8");
+const content = source("src/lib/content.ts");
+const TOOLKIT = [...content.slice(content.indexOf("export const toolkit")).split("\n];")[0]
+  .matchAll(/area: "([^"]+)",\s*tools: \[([\s\S]*?)\]/g)]
+  .map(([, area, list]) => ({
+    area,
+    tools: [...list.matchAll(/tool\("([^"]+)"(?:, "([^"]+)")?/g)].map(([, name, logo]) => ({ name, logo })),
+  }));
+const PRINCIPLES = [
+  "Field apps work with no signal, and every record reaches the office.",
+  "Measure the slow screen, then fix the query, not the spinner.",
+  "Decisions live next to the code: comments, lint rules, tests.",
+];
+const reviews = source("src/lib/testimonials.ts");
+const QUOTE = /text:\s*"([^"]+)",\s*(?:\/\/[^\n]*\n\s*)*from: "([^"]+)",\s*platform: "([^"]+)",\s*date: "([^"]+)"/g;
+const asQuote = ([, text, from, platform, date]) => ({ text, from, platform, date });
+const ondaFull = asQuote(reviews.match(/const ondaFull[\s\S]*?\n\};/)[0].match(new RegExp(QUOTE.source)));
+const FEATURED = { ...ondaFull, text: reviews.match(/const onda: Testimonial = \{[\s\S]*?text: "([^"]+)"/)[1] };
+const QUOTES = [...reviews.slice(reviews.indexOf("export const testimonials")).split("\n];")[0].matchAll(QUOTE)].map(asQuote);
+const RATINGS = reviews.match(/\["(Top Rated[^"]+)", "([^"]+)"\]/).slice(1);
+const cite = (q) => `${q.from} · ${q.platform}, ${q.date}`;
+const citeHtml = (q) => `${esc(q.from)} · <span class="nw">${esc(`${q.platform}, ${q.date}`)}</span>`;
+if (!TOOLKIT.length || QUOTES.length !== 3) throw new Error("couldn't read the toolkit or the reviews");
+
+const sectionPage = (css, body) => `<!doctype html><meta charset="utf-8"><style>
+${fontFace(b64(FONT))}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:G;-webkit-font-smoothing:antialiased}
+ul,ol{list-style:none}
+#root{width:${PANEL_W}px;padding:2px 0 6px}
+h3{margin-bottom:14px;font-size:15px;font-weight:500}
+${css}</style><div id="root">${body}</div>`;
+
+const HOW_PAGE = sectionPage(`
+.split{display:grid;grid-template-columns:290px minmax(0,1fr);gap:44px;align-items:start}
+.st{font-size:30px;line-height:1.15;letter-spacing:-.03em}
+dl,ol{border-top:1px solid}
+.area{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px 20px;padding:14px 0;border-bottom:1px solid}
+dt{font-size:14px;line-height:22px}
+.tools{display:flex;flex-wrap:wrap;gap:6px 24px}
+.tool{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;line-height:22px;letter-spacing:-.005em;white-space:nowrap}
+.logo{display:block;flex:none;width:16px;height:16px}
+.principles{margin-top:36px}
+.principles li{padding:14px 0;border-bottom:1px solid;font-size:15.5px;line-height:1.5;letter-spacing:-.005em}
+`, `<div class="split"><div><p class="st" data-role="ink">Across the product.<br><span data-role="soft">Beyond the interface.</span></p>
+<div class="principles"><h3 data-role="ink">Principles</h3><ol>${PRINCIPLES.map((p) => `<li data-role="text2">${esc(p)}</li>`).join("")}</ol></div></div><div>
+<h3 data-role="ink">Toolkit</h3><dl>${TOOLKIT.map((g) => `<div class="area"><dt data-role="muted">${esc(g.area)}</dt><dd><ul class="tools">${g.tools.map((t) => `<li class="tool" data-role="text2">${t.logo ? `<i class="logo" data-box="public/logos/tech/${t.logo}.svg"></i>` : ""}${esc(t.name)}</li>`).join("")}</ul></dd></div>`).join("")}</dl>
+</div></div>`);
+
+const CLIENTS_PAGE = sectionPage(`
+.ratings{font-size:14px;line-height:22px}
+.featured{margin-top:18px}
+.featured p:first-child{max-width:24em;font-size:30px;line-height:1.25;letter-spacing:-.03em;text-wrap:balance}
+.cap{margin-top:14px;font-size:14px;line-height:1.4}
+.nw{white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:36px;padding-top:28px;border-top:1px solid}
+.q{font-size:15.5px;line-height:1.6;letter-spacing:-.005em;text-wrap:pretty}
+`, `<p class="ratings" data-role="muted">${esc(RATINGS.join(" · "))}</p>
+<figure class="featured"><p data-role="ink">“${esc(FEATURED.text)}”</p><p class="cap" data-role="muted">${citeHtml(FEATURED)}</p></figure>
+<ul class="grid">${QUOTES.map((q) => `<li><p class="q" data-role="text2">“${esc(q.text)}”</p><p class="cap" data-role="muted">${citeHtml(q)}</p></li>`).join("")}</ul>`);
+
 const page = join(TMP, "layout.html");
 writeFileSync(page, PAGE);
 const buttonType = [15, 500, -0.15]; // .btn: 15px, 500, -0.01em
-const { layout, labels, buttons } = await withChrome(async ({ send, evaluate }) => {
+const { layout, labels, buttons, sections } = await withChrome(async ({ send, evaluate }) => {
   await send("Page.enable");
   await send("Page.navigate", { url: `file://${page}` });
   await wait(800);
   const layout = await evaluate(LAYOUT);
   const labels = await evaluate(MEASURE(PRODUCTS.map((p) => [p.name, LABEL, 500, 0])));
   const buttons = await evaluate(MEASURE(BUTTONS.map((b) => [b.label, ...buttonType])));
-  return { layout, labels, buttons };
+  const sections = {};
+  for (const [name, html] of Object.entries({ how: HOW_PAGE, clients: CLIENTS_PAGE })) {
+    const file = join(TMP, `${name}.html`);
+    writeFileSync(file, html);
+    await send("Page.navigate", { url: `file://${file}` });
+    await wait(600);
+    sections[name] = await evaluate(LAYOUT);
+  }
+  return { layout, labels, buttons, sections };
 });
 
 // ---------------------------------------------------------------- art --
@@ -445,16 +536,19 @@ const portrait = await (async () => {
 const TY = Math.round((H - layout.height) / 2);
 const bannerFont = subset(layout.runs.map((r) => r.text).join("") + PRODUCTS.map((p) => p.name).join(""));
 
+/** Laid-out runs of text as SVG text, links underlined as the site does. */
+const textSvg = (runs, t, ox = 0, oy = 0) =>
+  runs.map((r) => {
+    const x = ox + r.left, y = oy + r.base;
+    const ls = r.ls ? ` letter-spacing="${n2(r.ls)}"` : "";
+    const line = r.link ? `<rect x="${n1(x)}" y="${n1(y + 4)}" width="${n1(r.right - r.left)}" height="1" fill="${t.line2}"/>` : "";
+    return `${line}<text x="${n1(x)}" y="${n1(y)}" font-size="${r.size}" font-weight="${r.weight}"${ls} fill="${t[r.role]}">${esc(r.text)}</text>`;
+  }).join("\n");
+
 function banner(t) {
   const { status: s, photo: p } = layout;
   const em = 50, bw = Math.max(2, 0.055 * em), pr = 0.27 * em;
   const px = TX + p.x, py = TY + p.y;
-  const text = layout.runs.map((r) => {
-    const x = TX + r.left, y = TY + r.base;
-    const ls = r.ls ? ` letter-spacing="${n2(r.ls)}"` : "";
-    const line = r.link ? `<rect x="${n1(x)}" y="${n1(y + 4)}" width="${n1(r.right - r.left)}" height="1" fill="${t.line2}"/>` : "";
-    return `${line}<text x="${n1(x)}" y="${n1(y)}" font-size="${r.size}" font-weight="${r.weight}"${ls} fill="${t[r.role]}">${esc(r.text)}</text>`;
-  });
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title">
 <title id="title">Hi, I’m Faseeh Hyder. I’m a product engineer and co-founder of Renew Reminder.</title>
 <defs><style>${fontFace(bannerFont)}text{font-family:G,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
@@ -471,7 +565,7 @@ function banner(t) {
 <rect x="${n1(px - 0.5)}" y="${n1(py - 0.5)}" width="${n1(p.w + 1)}" height="${n1(p.h + 1)}" rx="${n1(pr + 0.5)}" fill="none" stroke="rgba(${t.shadow},.1)"/>
 <rect x="${n1(px)}" y="${n1(py)}" width="${n1(p.w)}" height="${n1(p.h)}" rx="${n1(pr)}" fill="${t.frame}"/>
 <image xlink:href="data:image/jpeg;base64,${portrait}" x="${n1(px + bw)}" y="${n1(py + bw)}" width="${n1(p.w - 2 * bw)}" height="${n1(p.h - 2 * bw)}" clip-path="url(#photo)" preserveAspectRatio="xMidYMid slice"/>
-${text.join("\n")}
+${textSvg(layout.runs, t, TX, TY)}
 <g transform="translate(${n1(AX)} ${n1(AY)})">${art(t)}</g>
 </g>
 <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="${RAD - 0.5}" fill="none" stroke="${t.line}"/>
@@ -553,6 +647,35 @@ async function card(c, theme) {
 `;
 }
 
+// ------------------------------------------------------------ sections --
+
+let logoSeq = 0;
+/** A logo file drawn into its box, its ids kept apart from the others'. */
+function inlineLogo(b) {
+  const src = readFileSync(join(SITE, b.file), "utf8"), id = `l${++logoSeq}`;
+  const inner = src
+    .replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "").replace(/<title>[\s\S]*?<\/title>/, "")
+    .replace(/id="([^"]+)"/g, `id="${id}$1"`).replace(/url\(#([^)]+)\)/g, `url(#${id}$1)`);
+  return `<svg x="${n1(b.x)}" y="${n1(b.y)}" width="${n1(b.w)}" height="${n1(b.h)}" viewBox="${src.match(/viewBox="([^"]+)"/)[1]}">${inner}</svg>`;
+}
+
+/** A laid-out section on a clear ground: hairlines, logos in the text
+ *  colour (as the site masks them), and its text. */
+function section(L, t, label) {
+  const H = Math.ceil(L.height);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${PANEL_W}" height="${H}" viewBox="0 0 ${PANEL_W} ${H}" role="img" aria-label="${esc(label)}">
+<defs><style>${fontFace(subset(L.runs.map((r) => r.text).join("")))}text{font-family:G,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
+<filter id="ink" color-interpolation-filters="sRGB"><feFlood flood-color="${t.ink}"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs>
+${L.rules.map((r) => `<rect x="${n1(r.x)}" y="${n1(r.y)}" width="${n1(r.w)}" height="1" fill="${t.line}"/>`).join("")}
+<g filter="url(#ink)">${L.boxes.map(inlineLogo).join("")}</g>
+${textSvg(L.runs, t)}
+</svg>
+`;
+}
+
+const HOW_LABEL = `Across the product, beyond the interface. Toolkit: ${TOOLKIT.map((g) => `${g.area}: ${g.tools.map((x) => x.name).join(", ")}`).join("; ")}. Principles: ${PRINCIPLES.join(" ")}`;
+const CLIENTS_LABEL = `${RATINGS.join(". ")}. ${[FEATURED, ...QUOTES].map((q) => `“${q.text}” ${cite(q)}.`).join(" ")}`;
+
 // ------------------------------------------------------------ buttons --
 
 // Icons on the site's grid (src/components/icons.tsx): 24 units, a 1.75
@@ -591,6 +714,11 @@ BUTTONS.forEach((b, i) => {
   }
 });
 for (const [name, t] of Object.entries(THEMES)) writeFileSync(join(HERE, `hero-${name}.svg`), banner(t));
+mkdirSync(join(HERE, "sections"), { recursive: true });
+for (const [name, t] of Object.entries(THEMES)) {
+  writeFileSync(join(HERE, "sections", `how-${name}.svg`), section(sections.how, t, HOW_LABEL));
+  writeFileSync(join(HERE, "sections", `clients-${name}.svg`), section(sections.clients, t, CLIENTS_LABEL));
+}
 mkdirSync(join(HERE, "cards"), { recursive: true });
 for (const c of CARDS) {
   for (const name of Object.keys(THEMES)) writeFileSync(join(HERE, "cards", `${c.slug}-${name}.svg`), await card(c, name));

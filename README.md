@@ -19,23 +19,11 @@ Most of my code lives in private company and client repositories, so each card o
 
 ## How I work
 
-```ts
-const faseeh = {
-  builds: ["Flutter", "React Native", "Next.js", "Node.js"],
-  data: ["MongoDB", "PostgreSQL", "Redis", "SQLite (offline-first)"],
-  ships: ["AWS", "Docker", "GitHub Actions", "Sentry"],
-  believes: [
-    "Field apps work with no signal, and every record reaches the office.",
-    "Measure the slow screen, then fix the query, not the spinner.",
-    "Decisions live next to the code: comments, lint rules, tests.",
-  ],
-};
-```
+<a href="https://faseehhyder.com/about/"><picture><source media="(prefers-color-scheme: dark)" srcset="./sections/how-dark.svg"><img src="./sections/how-light.svg" alt="Across the product, beyond the interface. Principles: Field apps work with no signal, and every record reaches the office. Measure the slow screen, then fix the query, not the spinner. Decisions live next to the code: comments, lint rules, tests. Toolkit: Mobile: Flutter, React Native. Web: Next.js, React, TypeScript. Backend: Node.js, MongoDB, PostgreSQL, Redis. Cloud: AWS, Docker, GitHub Actions, Sentry. AI: Gemini, Claude, OpenAI. Growth: AppsFlyer, Google Analytics, Google Ads, PostHog, GoHighLevel." width="100%"></picture></a>
 
 ## What clients say
 
-> **“Faseeh is one of the most creative and technical developers I have had the pleasure to have work for our team.”**
-> <br><sub>Onda Software Solutions · Upwork · Top Rated, 100% Job Success</sub>
+<a href="https://faseehhyder.com/about/"><picture><source media="(prefers-color-scheme: dark)" srcset="./sections/clients-dark.svg"><img src="./sections/clients-light.svg" alt="Top Rated on Upwork, 100% Job Success. 4.7 from 14 reviews on Fiverr. “Faseeh is one of the most creative and technical developers I have had the pleasure to have work for our team.” Onda Software Solutions, Upwork, Oct 2026. Three more client reviews from Fiverr, from Spain, Bangladesh and the United Kingdom." width="100%"></picture></a>
 
 ## Open to work
 
