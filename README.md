@@ -1,44 +1,63 @@
-<h1 align="center">Faseeh Hyder</h1>
-<p align="center"><b>Product engineer.</b> I build whole products: the Flutter or React Native app, the Next.js web app, and the Node.js API behind them.</p>
 <p align="center">
-  <a href="https://faseehhyder.com">Portfolio</a> ·
-  <a href="https://faseehhyder.com/work/">Case studies</a> ·
-  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf">CV</a> ·
-  <a href="https://www.linkedin.com/in/faseehhyder">LinkedIn</a>
+  <a href="https://faseehhyder.com"><img src="./banner.svg" alt="Faseeh Hyder, product engineer: Flutter, React Native, Next.js, Node.js" width="100%"></a>
 </p>
+
+<p align="center">
+  <a href="https://faseehhyder.com"><img src="https://img.shields.io/badge/Portfolio-faseehhyder.com-1f5c4a?style=for-the-badge" alt="Portfolio"></a>
+  <a href="https://faseehhyder.com/work/"><img src="https://img.shields.io/badge/Case_studies-3-2a7560?style=for-the-badge" alt="Case studies"></a>
+  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-3c3c39?style=for-the-badge" alt="CV"></a>
+  <a href="https://www.linkedin.com/in/faseehhyder"><img src="https://img.shields.io/badge/LinkedIn-faseehhyder-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
+
+## Products I've built
+
+Most of my code lives in private company and client repositories, so each card opens a case study instead: the screens, the decisions and the trade-offs.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://faseehhyder.com/work/seedsense/"><img src="https://faseehhyder.com/work/seedsense/opengraph-image" alt="SeedSense case study"></a>
+      <h3>SeedSense</h3>
+      <p>Crop-trial software that keeps working offline in the field.</p>
+      <p><b>856</b> of 1,058 commits · <b>2,100+</b> tests · catalog <b>10.2 s → 0.2 s</b></p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://faseehhyder.com/work/renew-reminder/"><img src="https://faseehhyder.com/work/renew-reminder/opengraph-image" alt="Renew Reminder case study"></a>
+      <h3>Renew Reminder</h3>
+      <p>Subscription and spend management I co-founded.</p>
+      <p>Live on the <b>App Store</b>, <b>Google Play</b> and the web · <b>110+</b> sign-ups</p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://faseehhyder.com/work/autocart/"><img src="https://faseehhyder.com/work/autocart/opengraph-image" alt="AutoCart case study"></a>
+      <h3>AutoCart</h3>
+      <p>A vehicle marketplace for Ireland and the UK.</p>
+      <p>React Native app, backend, admin and website</p>
+    </td>
+  </tr>
+</table>
+
+## How I work
 
 ```ts
 const faseeh = {
-  role: "Product engineer: mobile, web, backend",
-  stack: ["Flutter", "React Native", "TypeScript", "Next.js", "Node.js", "MongoDB", "PostgreSQL", "AWS"],
-  shipped: ["SeedSense", "Renew Reminder", "AutoCart"],
-  basedIn: "Pakistan (UTC+5)",
-  openTo: "relocating: Germany and the EU first",
-  degree: "BE Computer Systems Engineering, recognised in Germany (anabin H+)",
+  builds: ["Flutter", "React Native", "Next.js", "Node.js"],
+  data: ["MongoDB", "PostgreSQL", "Redis", "SQLite (offline-first)"],
+  ships: ["AWS", "Docker", "GitHub Actions", "Sentry"],
+  believes: [
+    "Field apps work with no signal, and every record reaches the office.",
+    "Measure the slow screen, then fix the query, not the spinner.",
+    "Decisions live next to the code: comments, lint rules, tests.",
+  ],
 };
 ```
 
-### Where the work is
+## What clients say
 
-Most of what I build lives in private company and client repositories, so the case studies show it instead: the screens, the decisions and the trade-offs.
+> **“Faseeh is one of the most creative and technical developers I have had the pleasure to have work for our team.”**
+> <br><sub>Onda Software Solutions · Upwork · Top Rated, 100% Job Success</sub>
 
-| Product | What it is | My part |
-| --- | --- | --- |
-| [**SeedSense**](https://faseehhyder.com/work/seedsense/) | Crop-trial software that works offline in the field | Main engineer since the first commit: 856 of 1,058 commits, 2,100+ automated tests, evaluation catalog cut from 10.2 s to 0.2 s |
-| [**Renew Reminder**](https://faseehhyder.com/work/renew-reminder/) | Subscription and spend management, live on the App Store, Google Play and the web | Co-founder: React Native apps, Next.js web app and admin, Node.js API, in-app AI assistant |
-| [**AutoCart**](https://faseehhyder.com/work/autocart/) | A vehicle marketplace for Ireland and the UK | React Native app, backend, admin and website |
+## Open to work
 
-### What I care about
+Mobile and full-stack roles, remote or on-site. Based in Pakistan (UTC+5), relocating: **Germany and the EU first**. My degree is recognised in Germany (anabin H+).
 
-- **Offline first.** Field apps have to keep working with no signal, and every record has to reach the office intact.
-- **Fast where people wait.** Measure the slow screen, then fix the query, not the spinner.
-- **Rules written where the code lives.** Comments, lint rules and tests hold a team's decisions better than memory.
-
-### What clients say
-
-> “Faseeh is one of the most creative and technical developers I have had the pleasure to have work for our team.”
-> — Onda Software Solutions, on Upwork
-
-### Get in touch
-
-Open to mobile and full-stack roles, remote or on-site. Write to **faseehhyder33@gmail.com** or message me on [LinkedIn](https://www.linkedin.com/in/faseehhyder).
+**faseehhyder33@gmail.com** · [LinkedIn](https://www.linkedin.com/in/faseehhyder) · [faseehhyder.com](https://faseehhyder.com)
