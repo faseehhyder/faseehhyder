@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://faseehhyder.com"><img src="./banner.svg" alt="Faseeh Hyder, product engineer: Flutter, React Native, Next.js, Node.js" width="100%"></a>
+  <a href="https://faseehhyder.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./hero-dark.png"><img src="./hero.png" alt="faseehhyder.com: Faseeh Hyder, product engineer" width="100%"></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://faseehhyder.com"><img src="https://img.shields.io/badge/Portfolio-faseehhyder.com-1f5c4a?style=for-the-badge" alt="Portfolio"></a>
-  <a href="https://faseehhyder.com/work/"><img src="https://img.shields.io/badge/Case_studies-3-2a7560?style=for-the-badge" alt="Case studies"></a>
-  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-3c3c39?style=for-the-badge" alt="CV"></a>
+  <a href="https://faseehhyder.com"><img src="https://img.shields.io/badge/Portfolio-faseehhyder.com-131312?style=for-the-badge" alt="Portfolio"></a>
+  <a href="https://faseehhyder.com/work/"><img src="https://img.shields.io/badge/Case_studies-3-131312?style=for-the-badge" alt="Case studies"></a>
+  <a href="https://faseehhyder.com/cv/Faseeh-Hyder-CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-131312?style=for-the-badge" alt="CV"></a>
   <a href="https://www.linkedin.com/in/faseehhyder"><img src="https://img.shields.io/badge/LinkedIn-faseehhyder-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
