@@ -61,9 +61,11 @@ const SHIPPED = [
     role: "Main engineer at Onda Software Solutions · 2024 – now",
   },
   {
-    name: "AutoCart", what: "Vehicle marketplace, Ireland and the UK", icon: "public/projects/autocart/icon.webp",
+    // Unnamed, with a drawn mark for its icon: the client asked (2026-11-27)
+    // not to be named in the portfolio.
+    name: "Vehicle marketplace", what: "Buying and selling, for a client", icon: "drawn:car.webp",
     proof: [["React Native", 1], [" app, "], ["Node.js", 1], [" backend, admin and website"]],
-    role: "Engineer, client project · 2026 – now",
+    role: "Engineer · 2026 – now",
   },
 ];
 // One line: the frameworks, the data, the cloud and the AI. TypeScript is
@@ -277,9 +279,21 @@ const MARK = {
   paths: [...logoSrc.slice(logoSrc.indexOf("MARK_PATHS")).split("];")[0].matchAll(/"(M[^"]+)"/g)].map((m) => m[1]),
 };
 
+// Marks drawn here, for work whose own icon can't be shown ("drawn:…"):
+// on the site's icon grid (24 units, round strokes), in ink on white, so
+// they sit with the app icons in either theme.
+const DRAWN = {
+  "drawn:car.webp":
+    '<path d="M19 17h2a1 1 0 0 0 1-1v-3a2 2 0 0 0-1.4-1.9L18 10.2l-2.1-3.1A2 2 0 0 0 14.2 6H9.8a2 2 0 0 0-1.7.9L6 10.2l-2.6.9A2 2 0 0 0 2 13v3a1 1 0 0 0 1 1h2M9 17h6M6 10.2h12"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>',
+};
+const iconSource = (icon) =>
+  DRAWN[icon]
+    ? Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24"><rect width="24" height="24" fill="#fff"/><g transform="translate(4.2 3.8) scale(0.65)" fill="none" stroke="${THEMES.light.ink}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${DRAWN[icon]}</g></svg>`)
+    : join(SITE, icon);
+
 // Each product's icon, at twice its size for a sharp screen.
 const ICONS = Object.fromEntries(await Promise.all(SHIPPED.map(async (p) =>
-  [p.icon, (await sharp(join(SITE, p.icon)).resize(72, 72).webp({ quality: 88 }).toBuffer()).toString("base64")])));
+  [p.icon, (await sharp(iconSource(p.icon)).resize(72, 72).webp({ quality: 88 }).toBuffer()).toString("base64")])));
 
 let ids = 0;
 /** A tool's logo drawn into its box, its ids kept apart from the others'. */
